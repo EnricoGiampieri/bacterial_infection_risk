@@ -1,8 +1,0 @@
-name: bacterial_infection
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - numpy
-  - matplotlib
-  - pandas
