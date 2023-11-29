@@ -22,7 +22,7 @@ v[x_base<v_low] = np.nan
 v[x_base>v_top] = np.nan
 
 
-st.write('### public health risk as a function of average _Campylobacter spp._ bacterial load')
+st.write('### public health risk as a function of _Campylobacter spp._ concentration in broiler caeca content')
 # if I put the dot after the name, it crashes the graphics...
 x_label = "average Campylobacter spp bacterial load ( Log10 cfu/g)"
 chart_data = pd.DataFrame({
@@ -49,7 +49,7 @@ v_top = x_top*t_top
 v[x_base<v_low] = np.nan
 v[x_base>v_top] = np.nan
 
-st.write('### public health risk as a function of _Campylobacter spp._ contamination prevalence')
+st.write('### public health risk as a function of _Campylobacter spp._ prevalence in broiler flocks')
 x_label = "average Campylobacter exposure probability"
 chart_data = pd.DataFrame({
     x_label: x_base*100,
