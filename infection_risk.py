@@ -42,8 +42,8 @@ st.line_chart(
     color=["#ff0000", "#003333"],
 )
 
-st.write('lower bound for the risk:', round(np.nanmin(v), 2), 'upper bound for the risk:', round(np.nanmax(v), 2))
-
+st.write(f'lower bound for the risk: {np.nanmin(v)*100:>3.2f}%')
+st.write(f'upper bound for the risk: {np.nanmax(v)*100:>3.2f}%')
 
 x_base = np.linspace(0, 1, 101)
 y_base = x_base**3/(x_base**3+0.5**3)
@@ -68,5 +68,5 @@ st.line_chart(
     color=["#ff0000", "#003333"],
 )
 
-st.write('lower bound for the risk:', round(np.nanmin(v), 2), 'upper bound for the risk:', round(np.nanmax(v), 2))
-
+st.write(f'lower bound for the risk: {np.nanmin(v)*100:>3.2f}%')
+st.write(f'upper bound for the risk: {np.nanmax(v)*100:>3.2f}%')
